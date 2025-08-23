@@ -1,0 +1,73 @@
+
+@font-face{
+  font-family:"Outfit";
+  src: 
+  url("/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype")
+}
+@font-face{
+  font-family:"Young-serif";
+  src:url("/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+/* Variables */
+:root{
+  --margin-bottom: 30px;
+  --clr1: hsl(29, 53%, 90%);
+  --clr2: hsl(18, 24%, 47%);
+  --clr3: hsl(30, 4%, 36%);
+  --padding: 30px;
+  --padding-top: 15px;
+
+
+}
+/* Whole page resources */
+body{
+  display: flex;
+  min-height: 100vh; /*Used min height because the whole layout didn't fit on the page */
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr1);
+  
+}
+
+.component{
+  background-color:white;
+  width: 100%;
+  max-width: 675px;
+  
+  margin: 100px 20px;
+  padding: var(--padding);
+  line-height: 1.5;
+  font-family: "Outfit";
+  border-radius: 15px;
+}
+
+/* Component */
+img{
+  width: 100%;
+  border-radius: 12px;
+}
+.component__prep__time{
+
+}
+h4{
+}
+
+h3, h2{
+  font-family: "Young-serif";
+  font-weight:400;
+}
+h2
+.component__macros{
+  border-top: 2px solid grey;
+  padding-top: var(--padding-top);
+
+}
+
+
+
