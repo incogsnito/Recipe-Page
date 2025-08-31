@@ -34,6 +34,11 @@ body{
   background-color: var(--clr1);
   
 }
+@media all and (min-width:600px){
+  .component{
+    min-width: 100vh;
+  }
+}
 
 .component{
   background-color:white;
@@ -68,6 +73,7 @@ h2
   padding-top: var(--padding-top);
 
 }
+
 
 
 
