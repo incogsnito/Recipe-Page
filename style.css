@@ -10,77 +10,129 @@
 }
 
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
-/* Variables */
-:root{
-  --margin-bottom: 30px;
-  --clr1: hsl(29, 53%, 90%);
-  --clr2: hsl(18, 24%, 47%);
-  --clr3: hsl(30, 4%, 36%);
-  --padding: 30px;
-  --padding-top: 15px;
 
-
-}
-/* Whole page resources */
+/* Basic things */
 body{
-  display: flex;
-  min-height: 100vh; /*Used min height because the whole layout didn't fit on the page */
-  align-items: center;
-  justify-content: center;
-  background-color: var(--clr1);
-  
+ padding: 0;
+ margin: 0;
+ font-family: "Outfit", sans-serif;
 }
 
-
-.component{
-  background-color:white;
-  width: 100%;
-  max-width: 675px;
-  
-  margin: 100px 20px;
-  padding: var(--padding);
-  line-height: 1.5;
-  font-family: "Outfit";
-  border-radius: 15px;
+.layout{
+  padding: 0 0 20px 0;
 }
 
-/* Component */
 img{
+  max-width:100%;
+}
+
+h1{
+  font-size: clamp(40px, 5vw, 60px);
+}
+
+h1, h2{
+  color:hsl(14, 45%, 36%);
+  font-family: "Young-serif", sans-serif;
+  font-weight: 400;
+}
+h2{
+  font-size: 1.75rem;
+}
+
+li{
+  margin-bottom: 1em;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* design */
+
+.preparation__list{
+  background-color:#fff7fc;
+  padding: 1em 0;
+}
+
+.preparation__list h2{
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit";
+  padding-left: 0.5em;
+  font-weight: bold;
+}
+
+.ingredients{
+  margin-top: 20px;
+}
+
+
+
+.instructions{
+  border-top: 1px solid hsl(30, 10%, 34%);
+}
+
+.instructions__list{
+  padding: 20px;
+  color: hsl(30, 10%, 34%);
+}
+
+ol li::marker{
+  color:hsl(332, 51%, 32%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.instructions__list li{
+  padding-left: 20px;
+}
+
+.nutrition{
+  border-top: 1px solid hsl(30, 10%, 34%);
+}
+
+
+table{
   width: 100%;
-  border-radius: 12px;
-}
-.component__prep__time{
-
-}
-h4{
+  border-collapse:collapse   
 }
 
-h3, h2{
-  font-family: "Young-serif";
-  font-weight:400;
+th, td{
+  color: grey;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
 }
-h2
-.component__macros{
-  border-top: 2px solid grey;
-  padding-top: var(--padding-top);
-
+.last__child{
+  border: none;
 }
 
-@media all and (min-width:600px){
-  .component{
-    width: 100vw;
-    height: 100vh;
+
+@media (min-width: 1000px){
+  body{    
+    background-color:rgba(150, 75, 0, 0.1);
+    padding: 5em 0;
   }
+
+  .layout{
+    max-width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px 0;
+  }
+
+  .img__container{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .omelette{
+    border-radius: 10px;
+    width: 100%;
+
+  }
+
+
 }
-
-
-
-
-
-
-
-
