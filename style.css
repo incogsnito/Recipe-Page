@@ -2,11 +2,11 @@
 @font-face{
   font-family:"Outfit";
   src: 
-  url("/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype")
+  url("./recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype")
 }
 @font-face{
   font-family:"Young-serif";
-  src:url("/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+  src:url("./recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
 }
 
 *{
