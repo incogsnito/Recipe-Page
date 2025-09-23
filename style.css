@@ -114,7 +114,7 @@ th, td{
 
 @media (min-width: 1000px){
   body{    
-    background-color:rgba(150, 75, 0, 0.1);
+    background-color:rgba(150, 75, 0, 0.4);
     padding: 5em 0;
   }
 
@@ -144,4 +144,5 @@ th, td{
 
 
 }
+
 
