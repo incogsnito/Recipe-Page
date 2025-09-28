@@ -108,14 +108,15 @@ th, td{
   padding: 10px 0;
   border-bottom: 1px solid gray;
 }
+
 .last__child{
   border: none;
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 800px){
   body{    
-    background-color:rgba(150, 75, 0, 0.4);
+    background-color:rgba(150, 75, 0, 0.2);
     padding: 5em 0;
   }
 
@@ -124,7 +125,7 @@ th, td{
   }
 
   .layout{
-    max-width: 50%;
+    max-width: 900px;
     background-color: white;
     margin: 0 auto;
     border-radius: 10px;
@@ -145,6 +146,7 @@ th, td{
 
 
 }
+
 
 
 
