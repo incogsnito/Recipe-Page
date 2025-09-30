@@ -1,157 +1,142 @@
-
-@font-face{
-  font-family:"Outfit";
-  src: 
-  url("./recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype")
+@font-face {
+  font-family: "Outfit";
+  src: url("./recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
 }
-@font-face{
-  font-family:"Young-serif";
-  src:url("./recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+@font-face {
+  font-family: "Young-serif";
+  src: url("./recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 /* Basic things */
-body{
- padding: 0;
- margin: 0;
- font-family: "Outfit", sans-serif;
- display: flex;
- height: 100vh;
- align-items: center;
- justify-content: center;
+body {
+  padding: 2em 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
-.layout{
-  padding: 0 0 1.4em 0;
+.layout {
+  padding-block: 0 1.4em;
   width: 100%;
   max-width: 900px;
+  margin-inline: auto;
+  
 }
 
-img{
-  max-width:100%;
+img {
+  max-width: 100%;
 }
 
-h1{
+h1 {
   font-size: clamp(40px, 4vw, 50px);
-  color:hsl(14, 45%, 36%);
+  color: hsl(14, 45%, 36%);
   font-family: "Young-serif", sans-serif;
   font-weight: 400;
 }
 
-h2{
-  color:hsl(14, 45%, 36%);
+h2 {
+  color: hsl(14, 45%, 36%);
   font-family: "Young-serif", sans-serif;
   font-weight: 400;
 }
 
-h2{
+h2 {
   font-size: 1.75rem;
 }
 
-li{
+li {
   margin-bottom: 1em;
 }
 
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
 }
 
 /* design */
 
-.preparation__list{
-  background-color:#fff7fc;
+.preparation__list {
+  background-color: #fff7fc;
   padding: 1em 0;
 }
 
-.preparation__list h2{
+.preparation__list h2 {
   color: hsl(332, 51%, 32%);
   font-family: "Outfit";
   padding-left: 0.5em;
   font-weight: bold;
 }
 
-.ingredients{
+.ingredients {
   margin-top: 20px;
 }
 
-
-
-.instructions{
+.instructions {
   border-top: 1px solid hsl(30, 10%, 34%);
 }
 
-.instructions__list{
+.instructions__list {
   padding: 20px;
   color: hsl(30, 10%, 34%);
 }
 
-ol li::marker{
-  color:hsl(332, 51%, 32%);
+ol li::marker {
+  color: hsl(332, 51%, 32%);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.instructions__list li{
+.instructions__list li {
   padding-left: 20px;
 }
 
-.nutrition{
+.nutrition {
   border-top: 1px solid hsl(30, 10%, 34%);
 }
 
-
-table{
+table {
   width: 100%;
-  border-collapse:collapse   
+  border-collapse: collapse;
 }
 
-th, td{
+th,
+td {
   color: grey;
   padding: 10px 0;
   border-bottom: 1px solid gray;
 }
 
-.last__child{
+.last__child {
   border: none;
 }
 
-
-@media (min-width: 800px){
-  body{    
-    background-color:rgba(150, 75, 0, 0.2);
+@media (min-width: 800px) {
+  body {
+    background-color: rgba(150, 75, 0, 0.2);
   }
 
-  h1{
-      color: rgb(0,0,0);;
+  h1 {
+    color: rgb(0, 0, 0);
   }
 
-  .layout{
+  .layout {
     background-color: white;
     border-radius: 10px;
     padding: 20px 0;
   }
 
-  .img__container{
+  .img__container {
     width: 90%;
     margin: 0 auto;
   }
 
-  .omelette{
+  .omelette {
     border-radius: 10px;
     width: 100%;
-
   }
-
-
-
 }
-
-
-
-
-
-
